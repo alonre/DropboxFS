@@ -12,6 +12,15 @@
 		C69FEE701B54B71900FAB486 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69FEE6F1B54B71900FAB486 /* Images.xcassets */; };
 		C69FEE731B54B71900FAB486 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69FEE711B54B71900FAB486 /* MainMenu.xib */; };
 		C69FEE7F1B54B71900FAB486 /* DropboxFSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C69FEE7E1B54B71900FAB486 /* DropboxFSTests.m */; };
+		C69FEE981B54BA6900FAB486 /* DropboxController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69FEE971B54BA6900FAB486 /* DropboxController.m */; };
+		C69FEE9D1B54BB9600FAB486 /* OSXFUSE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69FEE9C1B54BB9600FAB486 /* OSXFUSE.framework */; };
+		C69FEE9F1B54BBB300FAB486 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69FEE9E1B54BBB300FAB486 /* Cocoa.framework */; };
+		C69FEEA31B54BBE700FAB486 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69FEEA01B54BBE700FAB486 /* AppKit.framework */; };
+		C69FEEA41B54BBE700FAB486 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69FEEA11B54BBE700FAB486 /* CoreData.framework */; };
+		C69FEEA51B54BBE700FAB486 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69FEEA21B54BBE700FAB486 /* Foundation.framework */; };
+		C69FEEA81B54BC7E00FAB486 /* DropboxFS.m in Sources */ = {isa = PBXBuildFile; fileRef = C69FEEA71B54BC7E00FAB486 /* DropboxFS.m */; };
+		C69FEEAA1B54BF3300FAB486 /* DropboxFS.icns in Resources */ = {isa = PBXBuildFile; fileRef = C69FEEA91B54BF3300FAB486 /* DropboxFS.icns */; };
+		C69FEEAD1B54C02C00FAB486 /* NSError+POSIX.m in Sources */ = {isa = PBXBuildFile; fileRef = C69FEEAC1B54C02C00FAB486 /* NSError+POSIX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,12 +38,24 @@
 		C69FEE691B54B71900FAB486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69FEE6A1B54B71900FAB486 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C69FEE6B1B54B71900FAB486 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C69FEE6D1B54B71900FAB486 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C69FEE6D1B54B71900FAB486 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C69FEE6F1B54B71900FAB486 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C69FEE721B54B71900FAB486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C69FEE781B54B71900FAB486 /* DropboxFSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropboxFSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69FEE7D1B54B71900FAB486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69FEE7E1B54B71900FAB486 /* DropboxFSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropboxFSTests.m; sourceTree = "<group>"; };
+		C69FEE961B54BA6900FAB486 /* DropboxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxController.h; sourceTree = "<group>"; };
+		C69FEE971B54BA6900FAB486 /* DropboxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxController.m; sourceTree = "<group>"; };
+		C69FEE9C1B54BB9600FAB486 /* OSXFUSE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSXFUSE.framework; path = /Library/Frameworks/OSXFUSE.framework; sourceTree = "<absolute>"; };
+		C69FEE9E1B54BBB300FAB486 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		C69FEEA01B54BBE700FAB486 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		C69FEEA11B54BBE700FAB486 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		C69FEEA21B54BBE700FAB486 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		C69FEEA61B54BC7E00FAB486 /* DropboxFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxFS.h; sourceTree = "<group>"; };
+		C69FEEA71B54BC7E00FAB486 /* DropboxFS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxFS.m; sourceTree = "<group>"; };
+		C69FEEA91B54BF3300FAB486 /* DropboxFS.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DropboxFS.icns; sourceTree = "<group>"; };
+		C69FEEAB1B54C02C00FAB486 /* NSError+POSIX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+POSIX.h"; sourceTree = "<group>"; };
+		C69FEEAC1B54C02C00FAB486 /* NSError+POSIX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+POSIX.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69FEEA51B54BBE700FAB486 /* Foundation.framework in Frameworks */,
+				C69FEEA31B54BBE700FAB486 /* AppKit.framework in Frameworks */,
+				C69FEEA41B54BBE700FAB486 /* CoreData.framework in Frameworks */,
+				C69FEE9F1B54BBB300FAB486 /* Cocoa.framework in Frameworks */,
+				C69FEE9D1B54BB9600FAB486 /* OSXFUSE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				C69FEE671B54B71900FAB486 /* DropboxFS */,
+				C69FEE991B54BB2D00FAB486 /* Frameworks */,
 				C69FEE7B1B54B71900FAB486 /* DropboxFSTests */,
 				C69FEE661B54B71900FAB486 /* Products */,
 			);
@@ -78,8 +105,14 @@
 			children = (
 				C69FEE6A1B54B71900FAB486 /* AppDelegate.h */,
 				C69FEE6B1B54B71900FAB486 /* AppDelegate.m */,
+				C69FEEA61B54BC7E00FAB486 /* DropboxFS.h */,
+				C69FEEA71B54BC7E00FAB486 /* DropboxFS.m */,
+				C69FEE961B54BA6900FAB486 /* DropboxController.h */,
+				C69FEE971B54BA6900FAB486 /* DropboxController.m */,
 				C69FEE6F1B54B71900FAB486 /* Images.xcassets */,
 				C69FEE711B54B71900FAB486 /* MainMenu.xib */,
+				C69FEEAB1B54C02C00FAB486 /* NSError+POSIX.h */,
+				C69FEEAC1B54C02C00FAB486 /* NSError+POSIX.m */,
 				C69FEE681B54B71900FAB486 /* Supporting Files */,
 			);
 			path = DropboxFS;
@@ -88,6 +121,7 @@
 		C69FEE681B54B71900FAB486 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C69FEEA91B54BF3300FAB486 /* DropboxFS.icns */,
 				C69FEE691B54B71900FAB486 /* Info.plist */,
 				C69FEE6D1B54B71900FAB486 /* main.m */,
 			);
@@ -109,6 +143,34 @@
 				C69FEE7D1B54B71900FAB486 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C69FEE991B54BB2D00FAB486 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C69FEE9A1B54BB4800FAB486 /* Linked Frameworks */,
+				C69FEE9B1B54BB5100FAB486 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C69FEE9A1B54BB4800FAB486 /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C69FEE9C1B54BB9600FAB486 /* OSXFUSE.framework */,
+				C69FEE9E1B54BBB300FAB486 /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		C69FEE9B1B54BB5100FAB486 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C69FEEA01B54BBE700FAB486 /* AppKit.framework */,
+				C69FEEA11B54BBE700FAB486 /* CoreData.framework */,
+				C69FEEA21B54BBE700FAB486 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69FEEAA1B54BF3300FAB486 /* DropboxFS.icns in Resources */,
 				C69FEE701B54B71900FAB486 /* Images.xcassets in Resources */,
 				C69FEE731B54B71900FAB486 /* MainMenu.xib in Resources */,
 			);
@@ -211,6 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69FEE6E1B54B71900FAB486 /* main.m in Sources */,
+				C69FEEAD1B54C02C00FAB486 /* NSError+POSIX.m in Sources */,
+				C69FEEA81B54BC7E00FAB486 /* DropboxFS.m in Sources */,
+				C69FEE981B54BA6900FAB486 /* DropboxController.m in Sources */,
 				C69FEE6C1B54B71900FAB486 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +395,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = DropboxFS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,6 +410,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = DropboxFS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -401,6 +475,7 @@
 				C69FEE841B54B71900FAB486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C69FEE851B54B71900FAB486 /* Build configuration list for PBXNativeTarget "DropboxFSTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +484,7 @@
 				C69FEE871B54B71900FAB486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

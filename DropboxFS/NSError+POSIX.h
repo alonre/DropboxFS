@@ -1,5 +1,8 @@
+//
+//  NSError+POSIX.h
+//
 // ================================================================
-// Copyright (C) 2007 Google Inc.
+// Copyright (C) 2008 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,14 +17,10 @@
 // limitations under the License.
 // ================================================================
 //
-//  main.m
-//  LoopbackFS
-//
-//  Created by ted on 12/27/07.
-//
-#import <Cocoa/Cocoa.h>
 
-int main(int argc, char *argv[])
-{
-    return NSApplicationMain(argc, (const char **) argv);
-}
+#import <Foundation/Foundation.h>
+
+// Category on NSError to  simplify creating an NSError based on posix errno.
+@interface NSError (POSIX)
++ (NSError *)errorWithPOSIXCode:(int)code;
+@end
