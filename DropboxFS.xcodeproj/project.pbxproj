@@ -21,6 +21,7 @@
 		C69FEEA81B54BC7E00FAB486 /* DropboxFS.m in Sources */ = {isa = PBXBuildFile; fileRef = C69FEEA71B54BC7E00FAB486 /* DropboxFS.m */; };
 		C69FEEAA1B54BF3300FAB486 /* DropboxFS.icns in Resources */ = {isa = PBXBuildFile; fileRef = C69FEEA91B54BF3300FAB486 /* DropboxFS.icns */; };
 		C69FEEAD1B54C02C00FAB486 /* NSError+POSIX.m in Sources */ = {isa = PBXBuildFile; fileRef = C69FEEAC1B54C02C00FAB486 /* NSError+POSIX.m */; };
+		C69FEEAF1B54C41800FAB486 /* DropboxOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69FEEAE1B54C41800FAB486 /* DropboxOSX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		C69FEEA91B54BF3300FAB486 /* DropboxFS.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DropboxFS.icns; sourceTree = "<group>"; };
 		C69FEEAB1B54C02C00FAB486 /* NSError+POSIX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+POSIX.h"; sourceTree = "<group>"; };
 		C69FEEAC1B54C02C00FAB486 /* NSError+POSIX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+POSIX.m"; sourceTree = "<group>"; };
+		C69FEEAE1B54C41800FAB486 /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = ../../../../Library/Frameworks/DropboxOSX.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			files = (
 				C69FEEA51B54BBE700FAB486 /* Foundation.framework in Frameworks */,
 				C69FEEA31B54BBE700FAB486 /* AppKit.framework in Frameworks */,
+				C69FEEAF1B54C41800FAB486 /* DropboxOSX.framework in Frameworks */,
 				C69FEEA41B54BBE700FAB486 /* CoreData.framework in Frameworks */,
 				C69FEE9F1B54BBB300FAB486 /* Cocoa.framework in Frameworks */,
 				C69FEE9D1B54BB9600FAB486 /* OSXFUSE.framework in Frameworks */,
@@ -157,6 +160,7 @@
 		C69FEE9A1B54BB4800FAB486 /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C69FEEAE1B54C41800FAB486 /* DropboxOSX.framework */,
 				C69FEE9C1B54BB9600FAB486 /* OSXFUSE.framework */,
 				C69FEE9E1B54BBB300FAB486 /* Cocoa.framework */,
 			);
